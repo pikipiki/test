@@ -3,4 +3,8 @@ body {
     /* if a video is contained in a div, there is a margin at the bottom */
     vertical-align: middle; 
   }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
