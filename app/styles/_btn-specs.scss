@@ -1,0 +1,259 @@
+.shop-specifications .specs {
+  padding: 0
+}
+
+.shop-specifications .specs .btn-wrap {
+  text-align: center;
+  padding: 30px 0;
+  border: 1px solid white;
+}
+
+.shop-specifications .specs .btn-wrap .show_btn {
+  color: white;
+  line-height: 1;
+  text-transform: uppercase;
+  text-shadow: none;
+  letter-spacing: .2em !important;
+  white-space: nowrap;
+  font-family: 'SamsungOne', sans-serif
+}
+
+@media screen and (max-width: 767px) {
+  .shop-specifications .specs .btn-wrap .show_btn {
+    letter-spacing: 0;
+    line-height: 2;
+
+
+  }
+}
+
+.shop-specifications .specs .btn-wrap .show_btn:after {
+  // background-image: url('//images.samsung.com/is/image/samsung/p5/fr/theframe/shop/btn-arw-down-black.svg');
+  height: 16px;
+  transform: scale(0.5);
+  width: 0px;
+  display: inline-block;
+  margin-top: -1px;
+  margin-left: 7px;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  content: ''
+}
+
+// .shop-specifications .specs .btn-wrap .show_btn.masque:after {
+//   // background-image: url('//images.samsung.com/is/image/samsung/p5/fr/theframe/shop/btn-arw-up-black.svg');
+// }
+
+
+.shop-specifications .specs .conteneur-volet {
+  max-height: 0;
+  overflow: hidden;
+  border-top: 1px solid #dadada;
+  -webkit-transition: all 1s 0s ease;
+  -moz-transition: all 1s 0s ease;
+  -ms-transition: all 1s 0s ease;
+  -o-transition: all 1s 0s ease;
+  transition: all 1s 0s ease;
+}
+
+.shop-specifications .specs .liste-caracteristiques {
+  color: white;
+  padding: 82px 143px 0px;
+  padding: 5.69vw 9.93vw 0vw;
+  overflow: hidden
+}
+
+.shop-specifications .specs .liste-caracteristiques>li {
+  display: list-item;
+  overflow: hidden;
+  margin-top: 52px;
+  line-height: 1.71
+}
+
+.shop-specifications .specs .liste-caracteristiques>li:first-child {
+  margin-top: 0
+}
+
+.shop-specifications .specs .liste-caracteristiques>li .spec-title {
+  font-size: 20px;
+  font-family: 'soB', sans-serif;
+  display: block;
+  width: 70%
+}
+
+.shop-specifications .specs .liste-caracteristiques>li .spec-desc {
+  font-size: 14px;
+  font-family: 'soR', sans-serif;
+  display: block;
+  width: 70%
+}
+
+.shop-specifications .specs .liste-caracteristiques>li li {
+  display: block;
+  float: left;
+  width: 33.33%;
+  margin-top: 19px
+}
+
+.shop-specifications .specs .liste-caracteristiques>li li:nth-child(3n+1) {
+  clear: both
+}
+
+.shop-specifications .specs .liste-caracteristiques>li li .spec-sub-title {
+  font-size: 14px;
+  font-family: 'soB', sans-serif;
+  display: block;
+  width: 70%
+}
+
+@media screen and (max-width: 600px) {
+  .shop-specifications .specs .liste-caracteristiques>li li {
+    width: 100%;
+    clear: both
+  }
+  .shop-specifications .specs .liste-caracteristiques>li li:nth-child(2n+1) {
+    clear: none
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .shop-specifications .specs .liste-caracteristiques>li li {
+    width: 50%
+  }
+  .shop-specifications .specs .liste-caracteristiques>li li:nth-child(2n+1) {
+    clear: both
+  }
+  .shop-specifications .specs .liste-caracteristiques>li li:nth-child(3n+1) {
+    clear: none
+  }
+}
+
+.spec-sub-title {
+  font-size: 15px;
+  font-family: SamsungOne;
+}
+
+.spec-desc {
+  font-size: 14px;
+  font-family: SamsungOne;
+  font-weight: regular;
+}
+
+.conteneur-volet table {
+  border-collapse: collapse;
+  border: none;
+  color: #000;
+  padding: 0 auto;
+  // margin: 50px auto 0px auto;
+  margin: 50px 0 30px;
+  max-width: 1280px;
+}
+
+.conteneur-volet table th {
+  text-align: center;
+  vertical-align: bottom;
+  padding: 0 10px 10px 10px;
+  text-align: left;
+}
+
+
+.conteneur-volet table td {
+  vertical-align: top;
+  padding: 20px 10px;
+  text-align: left;
+}
+
+.conteneur-volet table th:nth-child(1),
+.conteneur-volet table td:nth-child(1) {
+  text-align: left;
+  padding-left: 0;
+  font-weight: bold;
+}
+
+.conteneur-volet table td.spec-desc li {
+  position: relative;
+  padding-left: 11px;
+  list-style: initial;
+}
+
+.conteneur-volet table td.spec-desc li:before {
+  content: "";
+  position: absolute;
+  width: 0.1em;
+  height: 0.1em;
+  background: #000;
+  top: 6px;
+  left: 0;
+  line-height: 1em;
+  font-size: 300%;
+  border-radius: 100%;
+}
+/* responsive table */
+
+@media screen and (max-width: 768px) {
+  .spec-sub-title {
+      font-size: 15px;
+      font-family: SamsungOne;
+  }
+  .spec-desc {
+      font-size: 13px;
+      font-family: SamsungOne;
+      font-weight: regular;
+  }
+  .conteneur-volet table,
+  .conteneur-volet tbody {
+      display: block;
+      width: 90%;
+      float: left;
+  }
+  .conteneur-volet thead {
+      display: none;
+  }
+  .conteneur-volet table tr,
+  .conteneur-volet table th,
+  .conteneur-volet table td {
+      display: block;
+      padding: 5px 0 0 0;
+      text-align: left;
+      white-space: normal;
+  }
+  .conteneur-volet table tr {
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+  }
+  .conteneur-volet table th[data-title]:before,
+  .conteneur-volet table td[data-title]:before {
+      content: attr(data-title) "\00A0:\00A0";
+      font-weight: bold;
+  }
+  .conteneur-volet table td {
+      border: none;
+      margin-bottom: 6px;
+      color: white;
+  }
+  .conteneur-volet table td:empty {
+      display: none;
+  }
+  .conteneur-volet table td:first-child {
+      margin-bottom: 6px;
+      color: white;
+  }
+  .conteneur-volet table td:first-child:before {
+      content: '';
+  }
+}
+
+.shop-specifications .specs .btn-wrap.bottom {
+  border: none;
+}
+
+.fa.fa-chevron-down {
+  font-size: 0.9rem;
+  color: white;
+}
+
+.fa.fa-chevron-up {
+  display: none;
+  font-size: 0.9rem;
+  color: white;
+}
