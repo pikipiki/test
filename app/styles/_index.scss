@@ -1,3 +1,10 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: 'SamsungONE', 'Helvetica', Arial;
+  font-size: 2.6rem;
+}
+
 .video-container {
   position: relative;
   overflow: hidden;
@@ -66,4 +73,36 @@
 
 }
 
+.screen-container {
+  div {
+    position: relative;
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  .screen-xxl,
+  .screen-xl,
+  .screen-l1,
+  .screen-l2 {
+    position: relative;
+    z-index: 2;
+  }
+
+  .blue-glow-screen-xxl {
+    @include blue-glow(10px, 30%, 35%);
+  }
+
+  .blue-glow-screen-xl {
+    @include blue-glow(10px, 40%, 35%);
+  }
+
+  .blue-glow-screen-l1 {
+    @include blue-glow(20px,37%, 40%);
+  }
+
+  .blue-glow-screen-l2 {
+    @include blue-glow(20px, 16%, 40%);
+  }
+
+}
 

@@ -1,10 +1,3 @@
-body {
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
 .margin-0-auto {
   margin: 0 auto;
 }
@@ -14,16 +7,23 @@ body {
 }
 
 .light-blue {
-  color:  $light-blue;
-}
-
-.spec-desc.mobile-hide {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+  color: $light-blue;
 }
 
 .img-responsive {
   max-width: 100%;
   height: auto;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.align-items {
+  align-items: flex-end;
+}
+
+.text-center {
+  text-align: center;
 }
