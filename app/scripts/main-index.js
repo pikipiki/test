@@ -44,70 +44,76 @@ $(window).on('scroll', function () {
       
 });
 
-function wideAni(opt) {
-    if (opt) {
-        if ($("#wideExp").hasClass("animated")) {
-            return;
-        }
-        $("#wideExp").addClass("animated");
-        setTimeout(function() {
-            $("#wideExp").find(".left").animate({
-                marginLeft: "-100%"
-            }, 800);
-            $("#wideExp").find(".right").animate({
-                marginLeft: "100%"
-            }, 800);
-            $("#wideExp").find(".i169").animate({
-                opacity: 0
-            }, 800);
-            $("#wideExp").find(".i329").animate({
-                opacity: 1
-            }, 800, function() {
-                $("#wideExp").removeClass("animated");
-            });
-        }, 50);
-    } else {
-        if ($("#wideExp").hasClass("animated")) {
-            return;
-        }
-        $("#wideExp").addClass("animated");
-        $("#wideExp").find(".left").animate({
-            marginLeft: 0
-        }, 400);
-        $("#wideExp").find(".right").animate({
-            marginLeft: 0
-        }, 400);
-        $("#wideExp").find(".i169").animate({
-            opacity: 1
-        }, 400);
-        $("#wideExp").find(".i329").animate({
-            opacity: 0
-        }, 400, function() {
-            $("#wideExp").removeClass("animated");
-        });
-    }
+
+function initScrollama() {
+    const scroller = scrollama();
+    scroller.setup({
+            step: '.step-scrollama',
+            offset: 0.3,
+            debug: true
+        })
+        .onStepEnter(handleStepEnter)
+        .onStepExit(handleStepExit)
 }
 
-$(window).scroll(function() {
-    var startV = 0;
-    var endV = 0;
-    var isAnimate = false;
-
-    if ($(window).width() > $(window).height()) {
-        startV = $("#wideExp").offset().top - ($(window).height() / 3);
-    } else {
-        startV = $("#wideExp").offset().top - ($(window).height() / 5);
-    }
-    endV = $("#wideExp").offset().top + $("#wideExp").height() - ($(window).height() / 3);
-
-    if ($(window).scrollTop() > startV && $(window).scrollTop() < endV) {
-        if (!isAnimate) {
-            isAnimate = true;
-            wideAni(true);
+function handleStepEnter(response) {
+    TweenMax.to(
+        ".left",
+        1, {
+            marginLeft: '-100%',
         }
+    )
 
-    } else if ($(window).scrollTop() < startV - $(window).height() || $(window).scrollTop() > endV + $(window).height()) {
-        isAnimate = false;
-        wideAni(false);
-    }
-}).scroll();
+    TweenMax.to(
+        ".right",
+        1, {
+            marginLeft: '100%',
+        }
+    )
+
+    TweenMax.to(
+        ".i169",
+        1, {
+            opacity: '0'
+        }
+    )
+
+    TweenMax.to(
+        ".i329",
+        1, {
+            opacity: '1'
+        }
+    )
+}
+
+function handleStepExit(response) {
+    TweenMax.to(
+        ".left",
+        1, {
+            marginLeft: '0',
+        }
+    )
+
+    TweenMax.to(
+        ".right",
+        1, {
+            marginLeft: '0',
+        }
+    )
+
+    TweenMax.to(
+        ".i169",
+        1, {
+            opacity: '1'
+        }
+    )
+
+    TweenMax.to(
+        ".i329",
+        1, {
+            opacity: '0'
+        }
+    )
+}
+
+initScrollama();
