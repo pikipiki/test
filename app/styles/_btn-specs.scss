@@ -257,3 +257,9 @@
   font-size: 0.9rem;
   color: white;
 }
+
+@media screen and (max-width: 768px) {
+  .mobile-hide {
+    display: none!important;
+  }
+}
