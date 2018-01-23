@@ -1,0 +1,29 @@
+body {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.margin-0-auto {
+  margin: 0 auto;
+}
+
+.gradiant {
+  @include gradiant();
+}
+
+.light-blue {
+  color:  $light-blue;
+}
+
+.spec-desc.mobile-hide {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
