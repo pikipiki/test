@@ -15,7 +15,7 @@ body {
     background-position: center;
     height: 100%;
     width: 100%;
-    bottom: -8%;
+    bottom: 3%;
     background-size: contain;
   }
 
@@ -26,21 +26,22 @@ body {
     color: white;
     font-size: calc(5vw + 0.3rem);
     transform: translateY(-100%);
-    font-family: 'SamsungONE', 'Helvetica', Arial;
+    font-family: 'SamsungSharpSans', 'Helvetica', Arial;
+    text-shadow: 0 0 10px #000;
   }
 
   .samsung-logo {
     position: absolute;
     max-width: 20%;
-    top: 5vw;
-    left: 5vw;
+    top: 2.5vw;
+    left: 2.5vw;
   }
 
   .icon-video-container {
     position: absolute;
-    width: 15%;
-    bottom: 36%;
-    right: 3%;
+    width: 10%;
+    bottom: 53%;
+    right: 0%;
 
     img {
       width: 100%;
@@ -49,10 +50,10 @@ body {
 
   .slider {
     position: absolute;
-    width: 15%;
+    width: 10%;
     height: auto;
-    bottom: 4%;
-    right: 8%;
+    bottom: 31%;
+    right: 4%;
 
     img {
       width: 100%;
@@ -66,7 +67,7 @@ body {
   .mouse_sc {
     position: absolute;
     width: 5vw;
-    bottom: 2%;
+    bottom: 27%;
     left: 50%;
     transform: translateX(-50%);
   }
