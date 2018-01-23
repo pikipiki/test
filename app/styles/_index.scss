@@ -105,5 +105,23 @@ body {
     @include blue-glow(20px, 16%, 40%);
   }
 
+  .discover-btn {
+    border-radius: 2.5rem;
+    border: 1px solid $light-blue;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    width: 50%;
+    display: block;
+    margin: 1rem auto;
+  }
+
+  a:visited {
+    color: white;
+  }
+
+  .acheter {
+    font-size: 1.8rem;
+  }
+
 }
 

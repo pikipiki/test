@@ -20,10 +20,43 @@
   flex-direction: row;
 }
 
-.align-items {
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-items-end {
   align-items: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
 }
 
 .text-center {
   text-align: center;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.filter-inverted {
+  filter: invert(1)
+}
+
+.display-inline {
+  display: inline;
+}
+
+.display-block {
+  display: block;
 }
