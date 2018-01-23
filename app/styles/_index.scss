@@ -125,21 +125,18 @@ body {
 
 }
 
-.inner {
-  position: relative;
+.megascreen {
+
+  & .inner {
+    position: relative;
+
+    & div {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+  }
 }
 
-.inner div {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-}
-
-.test {
-  width: 500px;
-  height: 500px;
-  background-color: grey;
-  margin: 0 auto;
-}
 

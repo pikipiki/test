@@ -49,8 +49,7 @@ function initScrollama() {
     const scroller = scrollama();
     scroller.setup({
             step: '.step-scrollama',
-            offset: 0.3,
-            debug: true
+            offset: 0.3
         })
         .onStepEnter(handleStepEnter)
         .onStepExit(handleStepExit)
