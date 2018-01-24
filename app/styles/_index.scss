@@ -142,4 +142,28 @@ h1 {
   }
 }
 
+.section10 {
+  .bg-img1 {
+    position: relative;
+    background: url('/images/products/whycurved_new/news_img01.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 445px
+  }
+
+  .bg-img2 {
+    position: relative;
+    background: url('/images/products/whycurved_new/news_img02.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 445px
+  }
+
+  img {
+    width: 50%;
+  }
+}
+
 
